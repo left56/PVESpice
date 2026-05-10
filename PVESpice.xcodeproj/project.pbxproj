@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A20000000000000000000001 /* PVESpiceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000001 /* PVESpiceApp.swift */; };
+		A20000000000000000000002 /* spice_bridge.c in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000002 /* spice_bridge.c */; };
+		A20000000000000000000003 /* AudioTapHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000003 /* AudioTapHelper.m */; };
+		A20000000000000000000004 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000004 /* Assets.xcassets */; };
+		A20000000000000000000005 /* PVEServerRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000013 /* PVEServerRecord.swift */; };
+		A20000000000000000000006 /* PVEVirtualMachineRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000014 /* PVEVirtualMachineRow.swift */; };
+		A20000000000000000000007 /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000015 /* KeychainStore.swift */; };
+		A20000000000000000000008 /* ProxmoxClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000016 /* ProxmoxClient.swift */; };
+		A20000000000000000000009 /* PVEServerStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000017 /* PVEServerStore.swift */; };
+		A2000000000000000000000A /* PVEApplicationViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000018 /* PVEApplicationViews.swift */; };
+		A2000000000000000000000B /* ProxmoxURLSessionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000019 /* ProxmoxURLSessionFactory.swift */; };
+		A20000000000000000000010 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20000000000000000000010 /* Metal.framework */; };
+		A20000000000000000000011 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20000000000000000000011 /* MetalKit.framework */; };
+		A20000000000000000000012 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20000000000000000000012 /* Security.framework */; };
+		A20000000000000000000013 /* RemoteSpiceSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000000000000000000001A /* RemoteSpiceSession.swift */; };
+		A20000000000000000000014 /* GuestFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000000000000000000001B /* GuestFileManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B20000000000000000000001 /* PVESpiceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVESpiceApp.swift; sourceTree = "<group>"; };
+		B20000000000000000000002 /* spice_bridge.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = spice_bridge.c; sourceTree = "<group>"; };
+		B20000000000000000000003 /* AudioTapHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioTapHelper.m; sourceTree = "<group>"; };
+		B20000000000000000000004 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B20000000000000000000005 /* spice_bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = spice_bridge.h; sourceTree = "<group>"; };
+		B20000000000000000000006 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		B20000000000000000000007 /* AudioTapHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioTapHelper.h; sourceTree = "<group>"; };
+		B20000000000000000000008 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B20000000000000000000009 /* PVESpice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PVESpice.entitlements; sourceTree = "<group>"; };
+		B20000000000000000000010 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		B20000000000000000000011 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		B20000000000000000000012 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B20000000000000000000013 /* PVEServerRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVEServerRecord.swift; sourceTree = "<group>"; };
+		B20000000000000000000014 /* PVEVirtualMachineRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVEVirtualMachineRow.swift; sourceTree = "<group>"; };
+		B20000000000000000000015 /* KeychainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStore.swift; sourceTree = "<group>"; };
+		B20000000000000000000016 /* ProxmoxClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxmoxClient.swift; sourceTree = "<group>"; };
+		B20000000000000000000017 /* PVEServerStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVEServerStore.swift; sourceTree = "<group>"; };
+		B20000000000000000000018 /* PVEApplicationViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVEApplicationViews.swift; sourceTree = "<group>"; };
+		B20000000000000000000019 /* ProxmoxURLSessionFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxmoxURLSessionFactory.swift; sourceTree = "<group>"; };
+		B2000000000000000000001A /* RemoteSpiceSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteSpiceSession.swift; sourceTree = "<group>"; };
+		B2000000000000000000001B /* GuestFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestFileManager.swift; sourceTree = "<group>"; };
+		B20000000000000000000100 /* PVESpice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PVESpice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C20000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A20000000000000000000011 /* MetalKit.framework in Frameworks */,
+				A20000000000000000000010 /* Metal.framework in Frameworks */,
+				A20000000000000000000012 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D20000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				D20000000000000000000002 /* PVESpiceMac */,
+				D20000000000000000000020 /* CSpiceBridge */,
+				D20000000000000000000030 /* Frameworks */,
+				D20000000000000000000031 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D20000000000000000000002 /* PVESpiceMac */ = {
+			isa = PBXGroup;
+			children = (
+				D20000000000000000000003 /* App */,
+				D20000000000000000000007 /* Spice */,
+				D20000000000000000000005 /* Models */,
+				D20000000000000000000006 /* Services */,
+				D20000000000000000000004 /* Resources */,
+			);
+			path = PVESpiceMac;
+			sourceTree = "<group>";
+		};
+		D20000000000000000000003 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B20000000000000000000001 /* PVESpiceApp.swift */,
+				B20000000000000000000018 /* PVEApplicationViews.swift */,
+				B20000000000000000000008 /* Info.plist */,
+				B20000000000000000000009 /* PVESpice.entitlements */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D20000000000000000000004 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B20000000000000000000004 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D20000000000000000000005 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B20000000000000000000013 /* PVEServerRecord.swift */,
+				B20000000000000000000014 /* PVEVirtualMachineRow.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D20000000000000000000006 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B20000000000000000000015 /* KeychainStore.swift */,
+				B20000000000000000000016 /* ProxmoxClient.swift */,
+				B2000000000000000000001B /* GuestFileManager.swift */,
+				B20000000000000000000019 /* ProxmoxURLSessionFactory.swift */,
+				B20000000000000000000017 /* PVEServerStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D20000000000000000000007 /* Spice */ = {
+			isa = PBXGroup;
+			children = (
+				B2000000000000000000001A /* RemoteSpiceSession.swift */,
+			);
+			path = Spice;
+			sourceTree = "<group>";
+		};
+		D20000000000000000000020 /* CSpiceBridge */ = {
+			isa = PBXGroup;
+			children = (
+				D20000000000000000000021 /* include */,
+				D20000000000000000000022 /* src */,
+			);
+			path = CSpiceBridge;
+			sourceTree = "<group>";
+		};
+		D20000000000000000000021 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				B20000000000000000000005 /* spice_bridge.h */,
+				B20000000000000000000007 /* AudioTapHelper.h */,
+				B20000000000000000000006 /* module.modulemap */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		D20000000000000000000022 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B20000000000000000000002 /* spice_bridge.c */,
+				B20000000000000000000003 /* AudioTapHelper.m */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		D20000000000000000000030 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B20000000000000000000010 /* Metal.framework */,
+				B20000000000000000000011 /* MetalKit.framework */,
+				B20000000000000000000012 /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D20000000000000000000031 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B20000000000000000000100 /* PVESpice.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E20000000000000000000003 /* Sync App Icon from icon.svg */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/icon.svg",
+				"$(SRCROOT)/Scripts/sync_app_icon.sh",
+			);
+			name = "Sync App Icon from icon.svg";
+			outputPaths = (
+				"$(SRCROOT)/PVESpiceMac/Resources/Assets.xcassets/AppIcon.appiconset/.generated_from_icon_svg",
+				"$(SRCROOT)/PVESpiceMac/Resources/Assets.xcassets/AppIcon.appiconset/icon-128.png",
+				"$(SRCROOT)/PVESpiceMac/Resources/Assets.xcassets/AppIcon.appiconset/icon-128@2x.png",
+				"$(SRCROOT)/PVESpiceMac/Resources/Assets.xcassets/AppIcon.appiconset/icon-16.png",
+				"$(SRCROOT)/PVESpiceMac/Resources/Assets.xcassets/AppIcon.appiconset/icon-16@2x.png",
+				"$(SRCROOT)/PVESpiceMac/Resources/Assets.xcassets/AppIcon.appiconset/icon-256.png",
+				"$(SRCROOT)/PVESpiceMac/Resources/Assets.xcassets/AppIcon.appiconset/icon-256@2x.png",
+				"$(SRCROOT)/PVESpiceMac/Resources/Assets.xcassets/AppIcon.appiconset/icon-32.png",
+				"$(SRCROOT)/PVESpiceMac/Resources/Assets.xcassets/AppIcon.appiconset/icon-32@2x.png",
+				"$(SRCROOT)/PVESpiceMac/Resources/Assets.xcassets/AppIcon.appiconset/icon-512.png",
+				"$(SRCROOT)/PVESpiceMac/Resources/Assets.xcassets/AppIcon.appiconset/icon-512@2x.png",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Scripts/sync_app_icon.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E20000000000000000000001 /* PVESpice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F20000000000000000000003 /* Build configuration list for PBXNativeTarget "PVESpice" */;
+			buildPhases = (
+				E20000000000000000000003 /* Sync App Icon from icon.svg */,
+				E20000000000000000000002 /* Sources */,
+				C20000000000000000000001 /* Frameworks */,
+				E20000000000000000000004 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PVESpice;
+			productName = PVESpice;
+			productReference = B20000000000000000000100 /* PVESpice.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E20000000000000000000010 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					E20000000000000000000001 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = F20000000000000000000001 /* Build configuration list for PBXProject "PVESpice" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D20000000000000000000001;
+			productRefGroup = D20000000000000000000031 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E20000000000000000000001 /* PVESpice */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E20000000000000000000004 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A20000000000000000000004 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E20000000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A20000000000000000000001 /* PVESpiceApp.swift in Sources */,
+				A2000000000000000000000A /* PVEApplicationViews.swift in Sources */,
+				A20000000000000000000013 /* RemoteSpiceSession.swift in Sources */,
+				A20000000000000000000005 /* PVEServerRecord.swift in Sources */,
+				A20000000000000000000006 /* PVEVirtualMachineRow.swift in Sources */,
+				A20000000000000000000007 /* KeychainStore.swift in Sources */,
+				A20000000000000000000008 /* ProxmoxClient.swift in Sources */,
+				A20000000000000000000014 /* GuestFileManager.swift in Sources */,
+				A2000000000000000000000B /* ProxmoxURLSessionFactory.swift in Sources */,
+				A20000000000000000000009 /* PVEServerStore.swift in Sources */,
+				A20000000000000000000002 /* spice_bridge.c in Sources */,
+				A20000000000000000000003 /* AudioTapHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F20000000000000000000010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F20000000000000000000011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F20000000000000000000020 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = PVESpiceMac/App/PVESpice.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = N3RHT3NTHK;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"HAVE_SPICE=1",
+					"$(inherited)",
+				);
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(VENDOR_DIR)/include",
+					"$(VENDOR_DIR)/include/spice-client-glib-2.0",
+					"$(VENDOR_DIR)/include/spice-1",
+					"$(VENDOR_DIR)/include/glib-2.0",
+					"$(VENDOR_DIR)/lib/glib-2.0/include",
+					"$(VENDOR_DIR)/include/libxml2",
+					"$(VENDOR_DIR)/include/libsoup-3.0",
+					"$(VENDOR_DIR)/include/libphodav-3.0",
+					"$(PROJECT_DIR)/CSpiceBridge/include",
+				);
+				INFOPLIST_FILE = PVESpiceMac/App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PVESpice;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(VENDOR_DIR)/lib";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.1.0;
+				OTHER_LDFLAGS = (
+					"-lspice-client-glib-2.0",
+					"-lphodav-3.0",
+					"-lsoup-3.0",
+					"-lnghttp2",
+					"-lpsl",
+					"-lidn2",
+					"-lunistring",
+					"-lxml2",
+					"-lsqlite3",
+					"-lglib-2.0",
+					"-lgobject-2.0",
+					"-lgmodule-2.0",
+					"-lgthread-2.0",
+					"-lgio-2.0",
+					"-ljson-glib-1.0",
+					"-lpixman-1",
+					"-lopus",
+					"-ljpeg",
+					"-lssl",
+					"-lcrypto",
+					"-lffi",
+					"-lpcre2-8",
+					"-lintl",
+					"-lz",
+					"-liconv",
+					"-lresolv",
+					"-framework",
+					VideoToolbox,
+					"-framework",
+					CoreMedia,
+					"-framework",
+					CoreVideo,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.pvespice.mac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)/CSpiceBridge/include";
+				SWIFT_VERSION = 5.0;
+				VENDOR_DIR = "$(PROJECT_DIR)/Vendor-macos-arm64";
+			};
+			name = Debug;
+		};
+		F20000000000000000000021 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = PVESpiceMac/App/PVESpice.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = N3RHT3NTHK;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"HAVE_SPICE=1",
+					"$(inherited)",
+				);
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(VENDOR_DIR)/include",
+					"$(VENDOR_DIR)/include/spice-client-glib-2.0",
+					"$(VENDOR_DIR)/include/spice-1",
+					"$(VENDOR_DIR)/include/glib-2.0",
+					"$(VENDOR_DIR)/lib/glib-2.0/include",
+					"$(VENDOR_DIR)/include/libxml2",
+					"$(VENDOR_DIR)/include/libsoup-3.0",
+					"$(VENDOR_DIR)/include/libphodav-3.0",
+					"$(PROJECT_DIR)/CSpiceBridge/include",
+				);
+				INFOPLIST_FILE = PVESpiceMac/App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PVESpice;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(VENDOR_DIR)/lib";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.1.0;
+				OTHER_LDFLAGS = (
+					"-lspice-client-glib-2.0",
+					"-lphodav-3.0",
+					"-lsoup-3.0",
+					"-lnghttp2",
+					"-lpsl",
+					"-lidn2",
+					"-lunistring",
+					"-lxml2",
+					"-lsqlite3",
+					"-lglib-2.0",
+					"-lgobject-2.0",
+					"-lgmodule-2.0",
+					"-lgthread-2.0",
+					"-lgio-2.0",
+					"-ljson-glib-1.0",
+					"-lpixman-1",
+					"-lopus",
+					"-ljpeg",
+					"-lssl",
+					"-lcrypto",
+					"-lffi",
+					"-lpcre2-8",
+					"-lintl",
+					"-lz",
+					"-liconv",
+					"-lresolv",
+					"-framework",
+					VideoToolbox,
+					"-framework",
+					CoreMedia,
+					"-framework",
+					CoreVideo,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.pvespice.mac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)/CSpiceBridge/include";
+				SWIFT_VERSION = 5.0;
+				VENDOR_DIR = "$(PROJECT_DIR)/Vendor-macos-arm64";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F20000000000000000000001 /* Build configuration list for PBXProject "PVESpice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F20000000000000000000010 /* Debug */,
+				F20000000000000000000011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F20000000000000000000003 /* Build configuration list for PBXNativeTarget "PVESpice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F20000000000000000000020 /* Debug */,
+				F20000000000000000000021 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E20000000000000000000010 /* Project object */;
+}

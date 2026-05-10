@@ -1,0 +1,14 @@
+.DS_Store
+DerivedData/
+build/
+*.xcuserstate
+xcuserdata/
+*.xcscmblueprint
+
+# xcodebuild -derivedDataPath 等本地构建输出（见 build_release.sh）
+.build/
+
+# 依赖构建产物（由 Scripts/build-deps-macos.sh 生成）
+Vendor-macos-arm64/
+.build-deps-macos-arm64/
+.build-deps-macos/

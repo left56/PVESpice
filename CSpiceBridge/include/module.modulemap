@@ -1,0 +1,5 @@
+module CSpiceBridge {
+    header "spice_bridge.h"
+    header "AudioTapHelper.h"
+    export *
+}

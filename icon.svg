@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5E00" />
+      <stop offset="100%" stop-color="#2D0052" />
+    </linearGradient>
+
+    <linearGradient id="metal-outer" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FAFAFA" />
+      <stop offset="50%" stop-color="#D4D4D6" />
+      <stop offset="100%" stop-color="#9A9A9C" />
+    </linearGradient>
+    <linearGradient id="metal-inner" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3A3A3C" />
+      <stop offset="100%" stop-color="#18181A" />
+    </linearGradient>
+    
+    <linearGradient id="screen-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E003D" />
+      <stop offset="100%" stop-color="#0A0014" />
+    </linearGradient>
+
+    <linearGradient id="neon-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF3366" />
+      <stop offset="100%" stop-color="#FF9933" />
+    </linearGradient>
+
+    <linearGradient id="server-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4A90E2" />
+      <stop offset="50%" stop-color="#7B33FF" />
+      <stop offset="100%" stop-color="#5100B3" />
+    </linearGradient>
+
+    <filter id="drop-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#000000" flood-opacity="0.45" />
+    </filter>
+    <filter id="light-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.3" />
+    </filter>
+    <filter id="neon-blur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="indicator-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1024" rx="231" fill="url(#bg-grad)" />
+
+  <path d="M 422 810 L 602 810 Q 622 810 632 840 L 652 880 Q 657 890 642 890 L 382 890 Q 367 890 372 880 L 392 840 Q 402 810 422 810 Z" fill="url(#metal-outer)" filter="url(#drop-shadow)" />
+  
+  <rect x="472" y="700" width="80" height="120" fill="url(#metal-outer)" />
+  <path d="M 472 700 L 552 700 L 552 730 L 472 730 Z" fill="#000000" opacity="0.35" />
+
+  <rect x="112" y="210" width="800" height="520" rx="45" fill="url(#metal-outer)" filter="url(#drop-shadow)" />
+  <rect x="132" y="230" width="760" height="480" rx="25" fill="url(#metal-inner)" />
+  
+  <rect x="142" y="240" width="740" height="460" rx="18" fill="url(#screen-grad)" />
+  
+  <rect x="172" y="270" width="680" height="400" rx="12" fill="none" stroke="url(#neon-glow)" stroke-width="6" filter="url(#neon-blur)" />
+
+  <rect x="352" y="560" width="320" height="70" rx="15" fill="#000000" opacity="0.6" filter="url(#neon-blur)" />
+
+  <g filter="url(#light-shadow)">
+    <rect x="352" y="540" width="320" height="75" rx="15" fill="url(#server-grad)" />
+    <line x1="367" y1="542" x2="657" y2="542" stroke="#FFFFFF" stroke-width="2" opacity="0.3" stroke-linecap="round" />
+    <circle cx="392" cy="577" r="6" fill="#00FFCC" filter="url(#indicator-glow)" />
+    <rect x="422" y="575" width="40" height="4" rx="2" fill="#FFFFFF" opacity="0.4" />
+    <rect x="472" y="575" width="20" height="4" rx="2" fill="#FFFFFF" opacity="0.4" />
+  </g>
+
+  <g filter="url(#light-shadow)">
+    <rect x="352" y="450" width="320" height="75" rx="15" fill="url(#server-grad)" />
+    <line x1="367" y1="452" x2="657" y2="452" stroke="#FFFFFF" stroke-width="2" opacity="0.3" stroke-linecap="round" />
+    <circle cx="392" cy="487" r="6" fill="#00FFCC" filter="url(#indicator-glow)" />
+    <rect x="422" y="485" width="40" height="4" rx="2" fill="#FFFFFF" opacity="0.4" />
+    <rect x="472" y="485" width="20" height="4" rx="2" fill="#FFFFFF" opacity="0.4" />
+  </g>
+
+  <g filter="url(#light-shadow)">
+    <rect x="352" y="360" width="320" height="75" rx="15" fill="url(#server-grad)" />
+    <line x1="367" y1="362" x2="657" y2="362" stroke="#FFFFFF" stroke-width="2" opacity="0.3" stroke-linecap="round" />
+    <circle cx="392" cy="397" r="6" fill="#00FFCC" filter="url(#indicator-glow)" />
+    <rect x="422" y="395" width="40" height="4" rx="2" fill="#FFFFFF" opacity="0.4" />
+    
+    <text x="512" y="415" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="52" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="3" filter="url(#light-shadow)">VM</text>
+  </g>
+
+  <g filter="url(#light-shadow)">
+    <path d="M 280 577 L 230 577 L 230 397 L 280 397" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linejoin="round" />
+    <circle cx="295" cy="577" r="12" fill="#FFFFFF" />
+    <circle cx="295" cy="397" r="12" fill="#FFFFFF" />
+  </g>
+
+  <g filter="url(#light-shadow)">
+    <path d="M 725 467 L 760 467 L 760 442 L 805 487 L 760 532 L 760 507 L 725 507 Z" fill="#FFFFFF" />
+  </g>
+
+  <g filter="url(#drop-shadow)">
+    <path d="M 462 130 A 60 60 0 0 1 562 130" fill="none" stroke="#FFFFFF" stroke-width="14" stroke-linecap="round" />
+    <path d="M 412 80 A 120 120 0 0 1 612 80" fill="none" stroke="#FFFFFF" stroke-width="14" stroke-linecap="round" />
+  </g>
+
+  <g filter="url(#drop-shadow)">
+    <path d="M 600 130 C 690 140, 700 280, 550 310" fill="none" stroke="#FFFFFF" stroke-width="16" stroke-linecap="round" />
+    <path d="M 580 270 L 530 315 L 590 335" fill="none" stroke="#FFFFFF" stroke-width="16" stroke-linejoin="round" stroke-linecap="round" />
+  </g>
+</svg>
