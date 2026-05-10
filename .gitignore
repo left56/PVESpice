@@ -12,3 +12,6 @@ xcuserdata/
 Vendor-macos-arm64/
 .build-deps-macos-arm64/
 .build-deps-macos/
+
+# 本地打好的 zip（上传 GitHub Releases，不提交）
+Distribution/macos-arm64/
